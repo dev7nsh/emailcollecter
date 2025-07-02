@@ -7,10 +7,13 @@ import routes from "./routes/email.routes.js"
 import path from "path";
 
 
-const __dirname = path.resolve();
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+const __dirname = path.resolve();
+
+
 app.use(cors({
      origin:"http://localhost:5173",
      credentials:true
@@ -29,14 +32,14 @@ app.use('/api',routes)
 
 
 
-if(process.env.NODE === "production"){
+if(process.env.NODE==="production"){
     app.use(express.static(path.join(__dirname, "../frontend/dist"))); 
 
 app.get("*", (req, res) => {
 res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
 });
 
-}
+};
 
 
 // Start server
