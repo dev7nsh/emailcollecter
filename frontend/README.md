@@ -1,12 +1,38 @@
-# React + Vite
+# 📧 Email Collector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web tool to **extract email addresses** from any public webpage URL. Built with modern technologies like **React**, **MongoDB**, and **DaisyUI**, it's hosted on **Render** for quick deployment and accessibility. 🚀
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Tech Stack
 
-## Expanding the ESLint configuration
+| Tech | Description |
+|------|-------------|
+| ⚛️ React | Frontend UI framework |
+| 🗄️ MongoDB | Database for storing collected emails |
+| ☁️ Render | Cloud platform for deployment |
+| 🎨 DaisyUI | Tailwind CSS component library for styling |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔍 Features
+
+- 🌐 Extracts emails from webpages
+- 🧠 Smart parsing and regex filtering
+- 🖼️ Clean, responsive UI with DaisyUI
+- ☁️ Deployed and live via Render
+- 🗃️ MongoDB integration for storing data
+
+---
+
+## 🚀 Live Demo
+
+> 🔗 https://emailcollecter.onrender.com/
+
+## api for access last 5 emails
+> https://backendemail-cf1o.onrender.com/emails
+
+---
+
+ 
+
