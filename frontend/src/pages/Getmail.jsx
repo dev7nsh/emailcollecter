@@ -25,9 +25,9 @@ export default function RecentEmails() {
   return (
     <div className="pt-10 flex flex-col items-center justify-center">
       <h2 className="text-xl font-bold mb-2 ">Recently Collected Emails</h2>
-      <ul className=" p-4 rounded shadow border border-gray-950 w-dvh">
+      <ul className=" p-4 rounded shadow border border-gray-600 w-dvh">
         {emails.map((item, index) => (
-          <li key={item._id || index} className="py-2 border-b last:border-b-0">
+          <li key={item._id || index} className="py-2 border-b last:border-b-0 border-gray-600">
             <div className="flex items-center justify-center">{item.email}</div>
             <div className="text-xs text-gray-500">
               {new Date(item.createdAt).toLocaleString()}
