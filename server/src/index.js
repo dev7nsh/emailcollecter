@@ -7,7 +7,7 @@ import routes from "./routes/email.routes.js"
 import path from "path";
 
 
-const _dirname = path.resolve();
+const __dirname = path.resolve();
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -26,14 +26,18 @@ app.use('/api',routes)
 
 
 //files samal
-app.use(express.static(path.join(_dirname, "../frontend/dist"))); 
-//jaa rha file ke pass
 
+
+
+if(process.env.NODE === "production"){
+    app.use(express.static(path.join(__dirname, "../frontend/dist"))); 
 
 app.get("*", (req, res) => {
-res.sendFile(path.join(_dirname, "../frontend", "dist", "index.html"));
+res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
 });
-// laa rhafile
+
+}
+
 
 // Start server
 app.listen(PORT, () => {
