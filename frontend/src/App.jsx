@@ -42,7 +42,7 @@ const App = () => {
   return (<>
     
     
- <div className="flex flex-col  justify-center h-[715px] p-20   "  >
+ <div className="flex flex-col  justify-center h-[715px] p-20 mb-10   "  >
 
 
   <form onSubmit={handleform} className='flex flex-col gap-4 items-center '>

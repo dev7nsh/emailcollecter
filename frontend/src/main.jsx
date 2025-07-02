@@ -8,6 +8,9 @@ import Header from './pages/header.jsx';
 import Footer from './pages/Footer.jsx'; 
 
 createRoot(document.getElementById('root')).render(
+  
+
+ 
   <StrictMode>
     {/* <Home/> */}
     
@@ -16,4 +19,6 @@ createRoot(document.getElementById('root')).render(
     <Footer/>
     
   </StrictMode>,
+
+
 )
