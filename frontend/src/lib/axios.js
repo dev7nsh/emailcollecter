@@ -2,6 +2,6 @@ import axios from "axios"
 
 
 export const axiosIntance = axios.create({
-    baseURL:"http://localhost:5001/api",
+    baseURL:"https://backendemail-cf1o.onrender.com/api",
     withCredentials: true,
 });
