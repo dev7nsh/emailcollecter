@@ -13,7 +13,7 @@ A full-stack web tool to **extract email addresses** from any public webpage URL
 | ☁️ Render | Cloud platform for deployment |
 | 🎨 DaisyUI | Tailwind CSS component library for styling |
 
----
+---f
 
 ## 🔍 Features
 
